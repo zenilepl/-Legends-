@@ -247,4 +247,4 @@ if (message.content.startsWith(prefix + 'setava')) {
   }
 });
 
-client.login("NTIwMzY0NzYxODEzMDkwMzI1.Duszig.jbtCCM9M5QyyMpR4OCWHKXecdoE");
+client.login(process.env.BOT_TOKEN);
