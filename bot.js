@@ -211,6 +211,24 @@ client.on('message', message => {
 }
 });
 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('discord.gg')){
+        if(!message.channel.guild) return;
+        message.delete()
+    return message.reply(`** Hahey Catch ya no invites links here 😠 ! **`)
+    }
+});
+ 
+ 
+client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('youtube')){
+        if(!message.channel.guild) return;
+        message.delete()
+    return message.reply(`** Hahey Catch ya no invites links here 😠 ! **`)
+    }
+});
 
 
 client.on('message', message => {
